@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>WebCampBackendNew</title>
+</head>
+<body>
+  <h1>Editing Book</h1>
+
+<%= form_for(@book) do |f| %>
+
+<label for="book_title">Title</label>
+<%= f.text_field :title %>
+<br><br>
+
+<label for="book_body">Body</label>
+<%= f.text_area :body %>
+<br><br>
+<%= f.submit 'Update book' %>
+<% end %>
+
+<a href="/books/new">Back</a>
+</body>
+</html>
+
